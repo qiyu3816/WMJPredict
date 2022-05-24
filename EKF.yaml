@@ -1,0 +1,18 @@
+%YAML:1.0
+---
+debug: 0
+control_freq: 18.0
+init_threshold: 100
+target_change_threshold: 2.0 # 0.25
+predict_time_coe: 0.00
+
+Q00: 0.1
+Q11: 10
+Q22: 0.1
+Q33: 10
+Q44: 0.01
+Q55: 1
+
+R00: 1
+R11: 1
+R22: 10

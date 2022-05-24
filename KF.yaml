@@ -1,0 +1,33 @@
+%YAML:1.0
+---
+
+# 为便于创建多个滤波器进行调参
+# 除debug和init_count_threshold由Predict直接读取外，其余参数全部由对应模块读取
+# 如[point]中的参数由POINT模式
+point:
+  debug                        : 0
+  init_count_threshold         : 300
+  process_noise_cov            : 0.00001
+  measure_noise_cov            : 0.001
+  predict_coe                  : 5.1 #0.34
+  control_freq                 : 18.0
+  target_change_dist_threshold : 0.25
+
+pose:
+  debug                        : 0
+  init_count_threshold         : 200
+  process_noise_cov            : 0.00001
+  measure_noise_cov            : 0.0001
+  predict_coe                  : 0.0 #0.34
+  control_freq                 : 18.0
+  target_change_dist_threshold : 2.0 #0.25
+  target_change_pose_threshold : 2.0 #0.25
+
+single:
+  debug                   : 0
+  init_count_threshold    : 100
+  process_noise_cov       : 0.00001
+  measure_noise_cov       : 0.0001
+  predict_coe             : 0.0
+  control_freq            : 18.0
+  value_diff              : 2.0
